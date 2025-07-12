@@ -18,11 +18,11 @@ fi
 # Install Zotero
 brew install --cask zotero
 echo "Zotero installed. Launching it to create initial profile..."
-open -a Zotero
-sleep 5  # Wait for initial launch
+# open -a Zotero
+# sleep 5  # Wait for initial launch
 
 # After install, check for DB and create collection
-DB_PATH="~/Zotero/zotero.sqlite"
+DB_PATH="$HOME/Zotero/zotero.sqlite"
 COLLECTION_NAME="$(basename "$(pwd)")"
 
 if [ ! -f "$DB_PATH" ]; then
@@ -43,7 +43,7 @@ fi
 
 # Download latest Better BibTeX .xpi
 XPI_URL=$(curl -s https://api.github.com/repos/retorquere/zotero-better-bibtex/releases/latest | grep "browser_download_url.*\.xpi" | cut -d '"' -f 4)
-XPI_FILE="~/Downloads/better-bibtex.xpi"
+XPI_FILE="$HOME/Downloads/better-bibtex.xpi"
 curl -L "$XPI_URL" -o "$XPI_FILE"
 echo "Downloaded Better BibTeX to $XPI_FILE"
 

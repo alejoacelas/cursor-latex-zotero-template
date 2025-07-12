@@ -19,13 +19,13 @@ fi
 brew update
 
 # Warn about MacTeX
-echo "Warning: Installing MacTeX takes a long time (large download). Continue? [y/n]"
-read -r confirm
-if [[ "$confirm" =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    brew install --cask mactex-no-ghostscript
-else
-    echo "Skipping MacTeX installation."
-fi
+# echo "Warning: Installing MacTeX takes a long time (large download). Continue? [y/n]"
+# read -r confirm
+# if [[ "$confirm" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+#     brew install --cask mactex-no-ghostscript
+# else
+#     echo "Skipping MacTeX installation."
+# fi
 
 # Install other essentials
 brew install sqlite

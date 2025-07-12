@@ -1,0 +1,98 @@
+alejo@Alejandros-MacBook-Air cursor-latex-zotero-template % bash scripts/setup.sh
+Homebrew already installed.
+==> Updating Homebrew...
+Already up-to-date.
+Warning: Installing MacTeX takes a long time (large download). Continue? [y/n]
+y
+Warning: Cask 'mactex-no-ghostscript' is unavailable: No Cask with this name exists.
+==> Searching for similarly named casks...
+==> Casks
+mactex-no-gui
+
+To install mactex-no-gui, run:
+  brew install --cask mactex-no-gui
+
+
+#### After commenting out the mactex installation
+
+
+alejo@Alejandros-MacBook-Air cursor-latex-zotero-template % bash scripts/setup.sh
+Homebrew already installed.
+==> Updating Homebrew...
+Already up-to-date.
+Warning: sqlite 3.50.2 is already installed and up-to-date.
+To reinstall 3.50.2, run:
+  brew reinstall sqlite
+Warning: poppler 25.07.0 is already installed and up-to-date.
+To reinstall 25.07.0, run:
+  brew reinstall poppler
+pandoc 3.6.4 is already installed but outdated (so it will be upgraded).
+==> Downloading https://ghcr.io/v2/homebrew/core/pandoc/manifests/3.7.0.2
+################################################################################################## 100.0%
+==> Fetching pandoc
+==> Downloading https://ghcr.io/v2/homebrew/core/pandoc/blobs/sha256:4ed6bbed48caac1f712c44ffd32068829457
+################################################################################################## 100.0%
+==> Upgrading pandoc
+  3.6.4 -> 3.7.0.2 
+==> Pouring pandoc--3.7.0.2.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/pandoc/3.7.0.2: 11 files, 172.9MB
+==> Running `brew cleanup pandoc`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /usr/local/Cellar/pandoc/3.6.4... (11 files, 171.3MB)
+Removing: /Users/alejo/Library/Caches/Homebrew/pandoc_bottle_manifest--3.6.4... (8.6KB)
+Removing: /Users/alejo/Library/Caches/Homebrew/pandoc--3.6.4... (32.8MB)
+==> Downloading https://ghcr.io/v2/homebrew/core/jq/manifests/1.8.1
+################################################################################################## 100.0%
+==> Fetching dependencies for jq: oniguruma
+==> Downloading https://ghcr.io/v2/homebrew/core/oniguruma/manifests/6.9.10
+################################################################################################## 100.0%
+==> Fetching oniguruma
+==> Downloading https://ghcr.io/v2/homebrew/core/oniguruma/blobs/sha256:174fa500f45c9421915e22c34f51abc28
+################################################################################################## 100.0%
+==> Fetching jq
+==> Downloading https://ghcr.io/v2/homebrew/core/jq/blobs/sha256:a1a5f487f1840d9a18abdecdf1c6c5a538591772
+################################################################################################## 100.0%
+==> Installing dependencies for jq: oniguruma
+==> Installing jq dependency: oniguruma
+==> Downloading https://ghcr.io/v2/homebrew/core/oniguruma/manifests/6.9.10
+Already downloaded: /Users/alejo/Library/Caches/Homebrew/downloads/04e9c35970e8b4c6db751bdaa577e7185a85d364ccc66e079983f524aab95a85--oniguruma-6.9.10.bottle_manifest.json
+==> Pouring oniguruma--6.9.10.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/oniguruma/6.9.10: 15 files, 1.4MB
+==> Installing jq
+==> Pouring jq--1.8.1.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/jq/1.8.1: 20 files, 1MB
+==> Running `brew cleanup jq`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Warning: lynx 2.9.2 is already installed and up-to-date.
+To reinstall 2.9.2, run:
+  brew reinstall lynx
+Installing VS Code extensions...
+Installing extensions...
+Installing extension 'edwinkofler.vscode-hyperupcall-pack-latex'...
+Extension 'tecosaur.latex-utilities' v0.4.14 was successfully installed.
+Extension 'edwinkofler.vscode-hyperupcall-pack-latex' v0.1.5 was successfully installed.
+(node:26594) [DEP0168] DeprecationWarning: Uncaught N-API callback exception detected, please run node with option --force-node-api-uncaught-exceptions-policy=true to handle those exceptions properly.
+(Use `Cursor --trace-deprecation ...` to show where the warning was created)
+Installing extensions...
+Installing extension 'notzaki.pandocciter'...
+Extension 'notzaki.pandocciter' v0.9.2 was successfully installed.
+(node:26606) [DEP0168] DeprecationWarning: Uncaught N-API callback exception detected, please run node with option --force-node-api-uncaught-exceptions-policy=true to handle those exceptions properly.
+(Use `Cursor --trace-deprecation ...` to show where the warning was created)
+Setup complete! Restart your terminal.
+
+
+####
+
+alejo@Alejandros-MacBook-Air cursor-latex-zotero-template % bash scripts/setup_zotero.sh
+Zotero is already installed. Skipping to avoid changes to existing setup.
+
+
+#### After commenting out the lines that skip if they find a Zotero installation
+
+alejo@Alejandros-MacBook-Air cursor-latex-zotero-template % bash scripts/setup_zotero.sh
+Warning: Not upgrading zotero, the latest version is already installed
+Zotero installed. Launching it to create initial profile...
+Zotero database not found. Please open and close Zotero once to initialize it (skip signup if prompted). Then re-run this script.
+
